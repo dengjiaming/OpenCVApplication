@@ -1,6 +1,7 @@
 package com.example.dengjiaming.opencvapplication;
 
 import android.content.Context;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.annotation.Nullable;
@@ -8,9 +9,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.dengjiaming.opencvapplication.util.DetectionBasedTracker;
+import com.example.dengjiaming.opencvapplication.util.FaceUtil;
 
 import org.opencv.android.BaseLoaderCallback;
 import org.opencv.android.CameraBridgeViewBase;
@@ -37,11 +41,16 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Arrays;
 
-
+/**
+ * @author djm
+ * @date 2018/2/1.
+ */
 public class OpenCVActivity extends AppCompatActivity implements CameraBridgeViewBase.CvCameraViewListener2 {
     private static final int JAVA_DETECTOR = 0;
     private static final int NATIVE_DETECTOR = 1;
     private static final String TAG = "OpenCVActivity";
+    private static final String FACE1 = "face1";
+    private static final String FACE2 = "face2";
     //图片所在文件夹
     private static final String fileName =
             Environment.getExternalStorageDirectory().getPath();
@@ -57,7 +66,7 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
     private CascadeClassifier mJavaDetector;
     private static final Scalar FACE_RECT_COLOR = new Scalar(0, 255, 0, 255);
 
-    private int state = 1;
+    private int state = 0;
     private Size mSize0;
     private MatOfInt mChannels[];
     private MatOfInt mHistSize;
@@ -74,6 +83,15 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
     private Mat mTmp2;
 
     private File mCascadeFile;
+
+    private boolean isGettingFace = false;
+    private Bitmap mBitmapFace1;
+    private Bitmap mBitmapFace2;
+    private ImageView mImageViewFace1;
+    private ImageView mImageViewFace2;
+    private TextView mCmpPic;
+    private double cmp;
+
     private BaseLoaderCallback mLoaderCallback = new BaseLoaderCallback(this) {
         @Override
         public void onManagerConnected(int status) {
@@ -98,6 +116,7 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
                         is.close();
                         os.close();
                         // 使用模型文件初始化人脸检测引擎
+
                         mJavaDetector = new CascadeClassifier(mCascadeFile.getAbsolutePath());
                         if (mJavaDetector.empty()) {
                             Log.e(TAG, "加载cascade classifier失败");
@@ -158,7 +177,7 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
         //设置分辨率
         mCameraView.setMaxFrameSize(1280, 720);
         //设置前后摄像头
-        mCameraView.setCameraIndex(CameraBridgeViewBase.CAMERA_ID_BACK);
+        mCameraView.setCameraIndex(CameraBridgeViewBase.CAMERA_ID_FRONT);
 
         findViewById(R.id.switchCamera).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -179,7 +198,7 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
                 Imgproc.cvtColor(mRgba, mBgr, Imgproc.COLOR_RGBA2BGR, 3);
                 if (Imgcodecs.imwrite(fileName + File.separator +
                       /*  System.currentTimeMillis()*/ state + ".png", mBgr)) {
-                    state++;
+//                    state++;
                     showMsg("success");
                 } else {
                     showMsg("fail");
@@ -187,7 +206,15 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
                 mBgr.release();
             }
         });
-
+        findViewById(R.id.catchFace).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                isGettingFace = true;
+            }
+        });
+        mImageViewFace1 = (ImageView) findViewById(R.id.face1);
+        mImageViewFace2 = (ImageView) findViewById(R.id.face2);
+        mCmpPic = (TextView) findViewById(R.id.similarity);
     }
 
     @Override
@@ -367,7 +394,16 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
             if (mJavaDetector != null) {
                 mJavaDetector.detectMultiScale(mGray, faces, 1.1, 2, 2,
                         new Size(mAbsoluteFaceSize, mAbsoluteFaceSize), new Size());
-
+//                mJavaDetector.detectMultiScale(mGray, // 要检查的灰度图像
+//                        faces, // 检测到的人脸
+//                        1.1, // 表示在前后两次相继的扫描中，搜索窗口的比例系数。默认为1.1即每次搜索窗口依次扩大10%;
+//                        10, // 默认是3 控制误检测，表示默认几次重叠检测到人脸，才认为人脸存在
+//                        CV_HAAR_FIND_BIGGEST_OBJECT // 返回一张最大的人脸（无效？）
+//                                | CV_HAAR_SCALE_IMAGE
+//                                | CV_HAAR_DO_ROUGH_SEARCH
+//                                | CV_HAAR_DO_CANNY_PRUNING, //CV_HAAR_DO_CANNY_PRUNING ,// CV_HAAR_SCALE_IMAGE, // TODO: objdetect.CV_HAAR_SCALE_IMAGE
+//                        new Size(mAbsoluteFaceSize, mAbsoluteFaceSize),
+//                        new Size(mGray.width(), mGray.height()));
             }
         } else if (mDetectorType == NATIVE_DETECTOR) {
             if (mNativeDetector != null) {
@@ -383,11 +419,62 @@ public class OpenCVActivity extends AppCompatActivity implements CameraBridgeVie
         Rect[] facesArray = faces.toArray();
         for (int i = 0; i < facesArray.length; i++) {
             Imgproc.rectangle(mRgba, facesArray[i].tl(), facesArray[i].br(), FACE_RECT_COLOR, 3);
+            onFace(mRgba, facesArray[i]);
         }
         if (faces.toArray().length > 0) {
-            Log.d(TAG, "共检测到 " + faces.toArray().length + " 张脸");
+//            Log.d(TAG, "共检测到 " + faces.toArray().length + " 张脸");
+        } else {
+            if (isGettingFace) {
+                isGettingFace = !isGettingFace;
+            }
         }
         return mRgba;
+    }
+
+    /**
+     * 检测到人脸
+     *
+     * @param mat  Mat
+     * @param rect Rect
+     */
+    public void onFace(Mat mat, Rect rect) {
+        if (isGettingFace) {
+            if (null == mBitmapFace1 || null != mBitmapFace2) {
+                mBitmapFace1 = null;
+                mBitmapFace2 = null;
+
+                // 保存人脸信息并显示
+                FaceUtil.saveImage(this, mat, rect, FACE1);
+                mBitmapFace1 = FaceUtil.getImage(this, FACE1);
+                cmp = 0.0d;
+            } else {
+                FaceUtil.saveImage(this, mat, rect, FACE2);
+                mBitmapFace2 = FaceUtil.getImage(this, FACE2);
+
+                // 计算相似度
+                cmp = FaceUtil.compare(this, FACE1, FACE2);
+                Log.i(TAG, "onFace: 相似度 : " + cmp);
+            }
+            Log.d(TAG, "onFace");
+            runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if (null == mBitmapFace1) {
+                        mImageViewFace1.setImageResource(R.mipmap.ic_launcher);
+                    } else {
+                        mImageViewFace1.setImageBitmap(mBitmapFace1);
+                    }
+                    if (null == mBitmapFace2) {
+                        mImageViewFace2.setImageResource(R.mipmap.ic_launcher);
+                    } else {
+                        mImageViewFace2.setImageBitmap(mBitmapFace2);
+                    }
+                    mCmpPic.setText(String.format("相似度 :  %.2f", cmp) + "%");
+                }
+            });
+
+            isGettingFace = false;
+        }
     }
 
     private void showMsg(String msg) {
