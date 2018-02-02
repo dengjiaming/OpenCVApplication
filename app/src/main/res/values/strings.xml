@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">OpenCVApplication</string>
+    <string name="switchCamera">switchCamera</string>
+    <string name="takePhoto">takePhoto</string>
+</resources>

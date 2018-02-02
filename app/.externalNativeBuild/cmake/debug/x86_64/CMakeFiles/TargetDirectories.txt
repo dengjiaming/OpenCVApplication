@@ -1,0 +1,4 @@
+/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/edit_cache.dir
+/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/detection_based_tracker.dir
+/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/x86_64/CMakeFiles/native-lib.dir

@@ -1,0 +1,19 @@
+Executable : /Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake
+arguments : 
+-H/Users/dengjiaming/Documents/now/OpenCVApplication/app
+-B/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips
+-DANDROID_ABI=mips
+-DANDROID_PLATFORM=android-24
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/dengjiaming/Documents/now/OpenCVApplication/app/build/intermediates/cmake/debug/obj/mips
+-DCMAKE_BUILD_TYPE=Debug
+-DANDROID_NDK=/Users/dengjiaming/Library/Android/sdk/ndk-bundle
+-DCMAKE_CXX_FLAGS=-std=c++11 -frtti -fexceptions
+-DCMAKE_TOOLCHAIN_FILE=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/ninja
+-GAndroid Gradle - Ninja
+-DANDROID_ARM_NEON=TRUE
+-DANDROID_TOOLCHAIN=clang
+-DCMAKE_BUILD_TYPE=Release
+-DANDROID_STL=gnustl_static
+jvmArgs : 
+

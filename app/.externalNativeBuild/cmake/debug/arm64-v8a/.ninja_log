@@ -1,0 +1,5 @@
+# ninja log v5
+0	437	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	e06590c25449a530
+438	550	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	44d14b7b26b8dd11
+0	1933	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o	fe6c53b90cc11e4a
+1934	2016	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	f5b6c748167ddfc3
