@@ -96,15 +96,19 @@ add_library( # Sets the name of the library.
              SHARED
 
              # Provides a relative path to your source file(s).
-             src/main/cpp/native-lib.cpp )
-
-#add_library(NativeExample
-#             SHARED
-#             src/main/jni/NativeUtils.cpp )
+             src/main/cpp/native-lib.cpp)
 
 add_library(detection_based_tracker
              SHARED
-             src/main/cpp/DetectionBasedTracker.cpp )
+             src/main/cpp/DetectionBasedTracker.cpp
+             src/main/cpp/lbph_faces.cpp
+             src/main/cpp/eigen_faces.cpp
+             src/main/cpp/fisher_faces.cpp
+             src/main/cpp/facerec.cpp
+             src/main/cpp/face_basic.cpp
+             src/main/cpp/predict_collector.cpp
+
+             )
 
 find_library( # Sets the name of the path variable.
               log-lib
@@ -116,19 +120,6 @@ find_library( # Sets the name of the path variable.
 # Specifies libraries CMake should link to your target library. You
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
-
-#target_link_libraries( # Specifies the target library.
-#                       native-lib
-
-#                       # Links the target library to the log library
-#                       # included in the NDK.
-#                       ${log-lib} )
-
-#target_link_libraries( NativeExample
-#                       ${log-lib} )
-
-#target_link_libraries( detection_based_tracker
-#                       ${log-lib} )
 
 target_link_libraries(native-lib android log
     libopencv_java3 #used for java sdk

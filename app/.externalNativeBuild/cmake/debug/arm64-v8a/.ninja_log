@@ -1,5 +1,23 @@
 # ninja log v5
-0	505	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	e06590c25449a530
-506	626	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	44d14b7b26b8dd11
-0	1938	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o	fe6c53b90cc11e4a
-1941	2041	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	f5b6c748167ddfc3
+0	431	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	e96440bce0101126
+435	566	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	44d14b7b26b8dd11
+4	3273	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/predict_collector.cpp.o	80c99f0a97c98cb0
+2	4728	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/facerec.cpp.o	210102cf730a4363
+3	6850	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/face_basic.cpp.o	591347f56191de40
+2	9593	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/eigen_faces.cpp.o	2393999b20d536c8
+2	11036	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/fisher_faces.cpp.o	ea7481ccde8265c0
+1	13455	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/lbph_faces.cpp.o	82c9038c9c029a35
+1	14222	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o	a342d05213a3ef87
+14223	14907	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	4486048f873ff223
+1	145	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	44d14b7b26b8dd11
+3	435	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	4486048f873ff223
+5	666	0	CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o	e96440bce0101126
+668	835	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libnative-lib.so	44d14b7b26b8dd11
+13	3517	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/predict_collector.cpp.o	80c99f0a97c98cb0
+11	4300	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/facerec.cpp.o	210102cf730a4363
+12	4915	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/face_basic.cpp.o	591347f56191de40
+7	5545	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/eigen_faces.cpp.o	2393999b20d536c8
+9	5913	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/fisher_faces.cpp.o	ea7481ccde8265c0
+6	6620	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/lbph_faces.cpp.o	82c9038c9c029a35
+5	7238	0	CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o	a342d05213a3ef87
+7238	7678	0	../../../../build/intermediates/cmake/debug/obj/arm64-v8a/libdetection_based_tracker.so	4486048f873ff223

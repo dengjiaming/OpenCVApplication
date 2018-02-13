@@ -34,7 +34,7 @@ include rules.ninja
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/armeabi && /Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/armeabi && /Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 build edit_cache: phony CMakeFiles/edit_cache.util
@@ -43,7 +43,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/armeabi && /Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/dengjiaming/Documents/now/OpenCVApplication/app -B/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/armeabi
+  COMMAND = cd /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/armeabi && /Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake -H/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app -B/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/armeabi
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -56,7 +56,55 @@ build CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.
   DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o.d
   FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/dengjiaming/Documents/now/OpenCVApplication/app/src/main/cpp/DetectionBasedTracker.cpp
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/DetectionBasedTracker.cpp
+  OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
+build CMakeFiles/detection_based_tracker.dir/src/main/cpp/lbph_faces.cpp.o: CXX_COMPILER__detection_based_tracker ../../../../src/main/cpp/lbph_faces.cpp
+  DEFINES = -Ddetection_based_tracker_EXPORTS
+  DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/lbph_faces.cpp.o.d
+  FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
+  INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/lbph_faces.cpp
+  OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
+build CMakeFiles/detection_based_tracker.dir/src/main/cpp/eigen_faces.cpp.o: CXX_COMPILER__detection_based_tracker ../../../../src/main/cpp/eigen_faces.cpp
+  DEFINES = -Ddetection_based_tracker_EXPORTS
+  DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/eigen_faces.cpp.o.d
+  FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
+  INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/eigen_faces.cpp
+  OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
+build CMakeFiles/detection_based_tracker.dir/src/main/cpp/fisher_faces.cpp.o: CXX_COMPILER__detection_based_tracker ../../../../src/main/cpp/fisher_faces.cpp
+  DEFINES = -Ddetection_based_tracker_EXPORTS
+  DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/fisher_faces.cpp.o.d
+  FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
+  INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/fisher_faces.cpp
+  OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
+build CMakeFiles/detection_based_tracker.dir/src/main/cpp/facerec.cpp.o: CXX_COMPILER__detection_based_tracker ../../../../src/main/cpp/facerec.cpp
+  DEFINES = -Ddetection_based_tracker_EXPORTS
+  DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/facerec.cpp.o.d
+  FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
+  INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/facerec.cpp
+  OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
+build CMakeFiles/detection_based_tracker.dir/src/main/cpp/face_basic.cpp.o: CXX_COMPILER__detection_based_tracker ../../../../src/main/cpp/face_basic.cpp
+  DEFINES = -Ddetection_based_tracker_EXPORTS
+  DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/face_basic.cpp.o.d
+  FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
+  INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/face_basic.cpp
+  OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
+  OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
+build CMakeFiles/detection_based_tracker.dir/src/main/cpp/predict_collector.cpp.o: CXX_COMPILER__detection_based_tracker ../../../../src/main/cpp/predict_collector.cpp
+  DEFINES = -Ddetection_based_tracker_EXPORTS
+  DEP_FILE = CMakeFiles/detection_based_tracker.dir/src/main/cpp/predict_collector.cpp.o.d
+  FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
+  INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/predict_collector.cpp
   OBJECT_DIR = CMakeFiles/detection_based_tracker.dir
   OBJECT_FILE_DIR = CMakeFiles/detection_based_tracker.dir/src/main/cpp
 
@@ -67,7 +115,7 @@ build CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.
 #############################################
 # Link the shared library ../../../../build/intermediates/cmake/debug/obj/armeabi/libdetection_based_tracker.so
 
-build ../../../../build/intermediates/cmake/debug/obj/armeabi/libdetection_based_tracker.so: CXX_SHARED_LIBRARY_LINKER__detection_based_tracker CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o | ../../../../src/main/libs/armeabi/libopencv_java3.so /Users/dengjiaming/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-arm/usr/lib/liblog.so
+build ../../../../build/intermediates/cmake/debug/obj/armeabi/libdetection_based_tracker.so: CXX_SHARED_LIBRARY_LINKER__detection_based_tracker CMakeFiles/detection_based_tracker.dir/src/main/cpp/DetectionBasedTracker.cpp.o CMakeFiles/detection_based_tracker.dir/src/main/cpp/lbph_faces.cpp.o CMakeFiles/detection_based_tracker.dir/src/main/cpp/eigen_faces.cpp.o CMakeFiles/detection_based_tracker.dir/src/main/cpp/fisher_faces.cpp.o CMakeFiles/detection_based_tracker.dir/src/main/cpp/facerec.cpp.o CMakeFiles/detection_based_tracker.dir/src/main/cpp/face_basic.cpp.o CMakeFiles/detection_based_tracker.dir/src/main/cpp/predict_collector.cpp.o | ../../../../src/main/libs/armeabi/libopencv_java3.so /Users/dengjiaming/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-arm/usr/lib/liblog.so
   LANGUAGE_COMPILE_FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG
   LINK_FLAGS = -Wl,--exclude-libs,libgcc.a --sysroot /Users/dengjiaming/Library/Android/sdk/ndk-bundle/platforms/android-24/arch-arm -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now
   LINK_LIBRARIES = -landroid -llog ../../../../src/main/libs/armeabi/libopencv_java3.so -llog -lm "/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/libgnustl_static.a" "-latomic"
@@ -86,7 +134,7 @@ build CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o: CXX_COMPILER__nat
   DEP_FILE = CMakeFiles/native-lib.dir/src/main/cpp/native-lib.cpp.o.d
   FLAGS = -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC
   INCLUDES = -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward
-  IN_ABS = /Users/dengjiaming/Documents/now/OpenCVApplication/app/src/main/cpp/native-lib.cpp
+  IN_ABS = /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/native-lib.cpp
   OBJECT_DIR = CMakeFiles/native-lib.dir
   OBJECT_FILE_DIR = CMakeFiles/native-lib.dir/src/main/cpp
 

@@ -1,4 +1,4 @@
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/edit_cache.dir
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/rebuild_cache.dir
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/detection_based_tracker.dir
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/native-lib.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/edit_cache.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/rebuild_cache.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/detection_based_tracker.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/debug/mips/CMakeFiles/native-lib.dir

@@ -1,4 +1,4 @@
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/edit_cache.dir
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/rebuild_cache.dir
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/detection_based_tracker.dir
-/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/native-lib.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/edit_cache.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/rebuild_cache.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/detection_based_tracker.dir
+/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi/CMakeFiles/native-lib.dir

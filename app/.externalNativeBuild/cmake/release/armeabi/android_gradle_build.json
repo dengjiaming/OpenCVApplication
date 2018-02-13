@@ -2,11 +2,11 @@
 {
 	"buildFiles" : 
 	[
-		"/Users/dengjiaming/Documents/now/OpenCVApplication/app/CMakeLists.txt"
+		"/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/CMakeLists.txt"
 	],
 	"cleanCommands" : 
 	[
-		"/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi --target clean"
+		"/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi --target clean"
 	],
 	"cppFileExtensions" : [ "cpp" ],
 	"libraries" : 
@@ -15,18 +15,54 @@
 		{
 			"abi" : "armeabi",
 			"artifactName" : "detection_based_tracker",
-			"buildCommand" : "/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi --target detection_based_tracker",
+			"buildCommand" : "/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi --target detection_based_tracker",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
 					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
-					"src" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/src/main/cpp/DetectionBasedTracker.cpp",
-					"workingDirectory" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/DetectionBasedTracker.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/lbph_faces.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/eigen_faces.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/fisher_faces.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/facerec.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/face_basic.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+				},
+				
+				{
+					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Ddetection_based_tracker_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/predict_collector.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
 				}
 			],
-			"output" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/build/intermediates/cmake/release/obj/armeabi/libdetection_based_tracker.so",
+			"output" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/build/intermediates/cmake/release/obj/armeabi/libdetection_based_tracker.so",
 			"toolchain" : "14440065887427942252"
 		},
 		"libopencv_java3-Release-armeabi" : 
@@ -34,25 +70,25 @@
 			"abi" : "armeabi",
 			"artifactName" : "libopencv_java3",
 			"buildType" : "release",
-			"output" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/src/main/libs/armeabi/libopencv_java3.so",
+			"output" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/libs/armeabi/libopencv_java3.so",
 			"toolchain" : "14440065887427942252"
 		},
 		"native-lib-Release-armeabi" : 
 		{
 			"abi" : "armeabi",
 			"artifactName" : "native-lib",
-			"buildCommand" : "/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi --target native-lib",
+			"buildCommand" : "/Users/dengjiaming/Library/Android/sdk/cmake/3.6.4111459/bin/cmake --build /Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi --target native-lib",
 			"buildType" : "release",
 			"files" : 
 			[
 				
 				{
 					"flags" : "  --target=armv5te-none-linux-androideabi --gcc-toolchain=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/toolchains/arm-linux-androideabi-4.9/prebuilt/darwin-x86_64 --sysroot=/Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot  -Dnative_lib_EXPORTS -I../../../../src/main/cpp/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/libs/armeabi/include -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sources/cxx-stl/gnu-libstdc++/4.9/include/backward  -isystem /Users/dengjiaming/Library/Android/sdk/ndk-bundle/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=24 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv5te -mtune=xscale -msoft-float -fno-integrated-as -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -std=c++11 -frtti -fexceptions -std=gnu++11 -fexceptions -frtti -Os -DNDEBUG  -fPIC    -c ",
-					"src" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/src/main/cpp/native-lib.cpp",
-					"workingDirectory" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
+					"src" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/src/main/cpp/native-lib.cpp",
+					"workingDirectory" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/.externalNativeBuild/cmake/release/armeabi"
 				}
 			],
-			"output" : "/Users/dengjiaming/Documents/now/OpenCVApplication/app/build/intermediates/cmake/release/obj/armeabi/libnative-lib.so",
+			"output" : "/Users/dengjiaming/Documents/now/demo/OpenCVApplication/app/build/intermediates/cmake/release/obj/armeabi/libnative-lib.so",
 			"toolchain" : "14440065887427942252"
 		}
 	},

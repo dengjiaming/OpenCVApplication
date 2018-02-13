@@ -2,6 +2,5 @@
     <string name="app_name">OpenCVApplication</string>
     <string name="switchCamera">switchCamera</string>
     <string name="takePhoto">takePhoto</string>
-    <string name="catchFace">catchFace</string>
-    <string name="similarity">相似度为</string>
+    <string name="train">train</string>
 </resources>

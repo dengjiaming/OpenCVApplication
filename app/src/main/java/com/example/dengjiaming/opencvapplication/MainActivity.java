@@ -17,7 +17,6 @@ public class MainActivity extends AppCompatActivity {
     static {
         System.loadLibrary("native-lib");
 //        System.loadLibrary("opencv_java3");
-
     }
 
     private static final int READ_EXTERNAL_STORAGE_CODE = 0;
@@ -52,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         // Example of a call to a native method
         Button tv = (Button) findViewById(R.id.sample_text);
         tv.setText(stringFromJNI());
+        Intent intentFd = new Intent(MainActivity.this, OpenCVActivity.class);
+        startActivity(intentFd);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

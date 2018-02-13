@@ -48,4 +48,23 @@ public class DetectionBasedTracker {
     private static native void nativeSetFaceSize(long thiz, int size);
 
     private static native void nativeDetect(long thiz, long inputImage, long faces);
+
+    public static native void saveEigenFaceRecognizer();
+
+    public static native void loadEigenFaceRecognizer();
+
+    public static native String eigenFaceRecognizer(long inputImage);
+
+    public static native void saveFisherFaceRecognizer();
+
+    public static native void loadFisherFaceRecognizer();
+
+    public static native String fisherFaceRecognizer(long inputImage);
+
+    public static native void saveLBPHFaceRecognizer();
+
+    public static native void loadLBPHFaceRecognizer();
+
+    public static native String lBPHFaceRecognizer(long inputImage);
+
 }
